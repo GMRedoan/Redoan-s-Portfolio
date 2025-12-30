@@ -7,6 +7,8 @@ import {
 import { ImLocation2 } from "react-icons/im";
 import { IoIosSend, IoLogoWhatsapp } from "react-icons/io";
 import { PiPlugsConnectedFill } from "react-icons/pi";
+import { useInView } from "react-intersection-observer";
+import { Typewriter } from "react-simple-typewriter";
 
 const ContactMe = () => {
   const {
@@ -21,8 +23,14 @@ const ContactMe = () => {
     reset();
   };
 
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.4,
+  });
+
+
   return (
-    <section id="contact-section" className="py-12 sm:py-20 relative">
+    <section id="contact-section" className="py-12 sm:py-20 relative" ref={ref}>
       <div className="max-w-7xl mx-auto">
         <div>
           <div
@@ -106,14 +114,30 @@ const ContactMe = () => {
                 <h2 className="text-white mb-4">
                   Let's{" "}
                   <span className="bg-linear-to-r from-emerald-700 to-lime-500 bg-clip-text text-transparent">
-                    Connect !
+                    {inView && (
+                      <Typewriter
+                        words={["Connect !"]}
+                        loop={1}
+                        cursor
+                        cursorStyle=""
+                        typeSpeed={80}
+                      />
+                    )}
                   </span>
                 </h2>
               </div>
 
               <p className="text-gray-300 mb-6">
-                I’m always open to discussing new projects, creative ideas,
-                or opportunities to be part of your vision.
+                {inView && (
+                  <Typewriter
+                    words={["I’m always open to discussing new projects, creative ideas, or opportunities to be part of your vision."]}
+                    loop={1}
+                    cursor
+                    cursorStyle=""
+                    typeSpeed={8}
+                  />
+                )}
+
               </p>
 
               <p className="text-gray-400 text-sm mb-7">
@@ -157,10 +181,10 @@ const ContactMe = () => {
                   type="text"
                   placeholder="Your Name"
                   {...register("name", { required: true })}
-                  className="input input-bordered w-full bg-transparent text-white"
+                  className="input input-bordered w-full bg-transparent text-lime-400"
                 />
                 {errors.name && (
-                  <span className="text-red-400 text-xs">
+                  <span className="text-red-500 text-xs">
                     Name is required
                   </span>
                 )}
@@ -172,10 +196,10 @@ const ContactMe = () => {
                   type="email"
                   placeholder="Your Email"
                   {...register("email", { required: true })}
-                  className="input input-bordered w-full bg-transparent text-white"
+                  className="input input-bordered w-full bg-transparent text-lime-400"
                 />
                 {errors.email && (
-                  <span className="text-red-400 text-xs">
+                  <span className="text-red-500 text-xs">
                     Email is required
                   </span>
                 )}
@@ -190,7 +214,7 @@ const ContactMe = () => {
                   className="textarea textarea-bordered w-full bg-transparent text-white"
                 />
                 {errors.message && (
-                  <span className="text-red-400 text-xs">
+                  <span className="text-red-500 text-xs">
                     Message is required
                   </span>
                 )}

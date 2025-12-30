@@ -1,8 +1,9 @@
-import { FaCode, FaMobileAlt, FaPaintBrush, FaBullhorn, FaDatabase } from "react-icons/fa";
+import { FaDatabase } from "react-icons/fa";
 import { GrSettingsOption } from "react-icons/gr";
 import { MdOutlinePayment, MdSecurity } from "react-icons/md";
+import { useInView } from "react-intersection-observer";
+import { Typewriter } from "react-simple-typewriter";
 
-const Service = () => {
     const services = [
         {
             title: "Database Management",
@@ -21,20 +22,26 @@ const Service = () => {
         },
         {
             title: "Payment Integration",
-            desc: "Secure integration of online payment gateways with backend logic to enable smooth and reliable transactions.",
+            desc: "Secure integration of online payment gateways with backend logic to enable smooth and reliable transactions system",
             icon: <MdOutlinePayment className="animate-pulse" />,
         },
     ];
 
+const Service = () => {
+
+      const [ref, inView] = useInView({
+        triggerOnce: false,  
+        threshold: 0.4, 
+      });
+    
     return (
-        <section className="pb-20 md:
-        pt-10">
+        <section className="pb-20 md:pt-10" ref={ref}>
             <section className="relative py-8 pb-12">
                 {/* tilted background */}
                 <div className="absolute inset-0 mx-22 max-w-7xl bg-linear-to-br from-emerald-900 to-lime-500 rounded-2xl
                 blur-[60px] opacity-20 border-2 border-lime-400" />
 
-                <div className="relative max-w-7xl mx-auto px-14">
+                <div className="relative max-w-7xl mx-auto px-8">
                     {/* heading */}
                     <div data-aos="zoom-in-down" className="mb-6 text-center">
                         <h2 className="text-4xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-500 to-lime-500 bg-clip-text text-transparent shimmer">
@@ -71,11 +78,19 @@ const Service = () => {
 
                                     {/* CONTENT */}
                                     <div
-                                        className="relative z-10 py-6 px-4"
+                                        className="relative z-10 py-6 px-3"
                                     >
                                         <div className="text-xl font-semibold bg-linear-to-r from-emerald-700 to-lime-500 bg-clip-text text-transparent mb-2 flex justify-center items-center gap-2">
                                             <span className="text-lime-400"> {icon}</span>
-                                            {title}
+                                            {inView && (
+                                                <Typewriter
+                                                    words={[title]}
+                                                    loop={1}
+                                                    cursor
+                                                    cursorStyle=""
+                                                    typeSpeed={80}
+                                                />
+                                            )}
                                         </div>
 
                                         <p className="text-gray-300 font-semibold text-center text-sm leading-relaxed">
@@ -90,14 +105,14 @@ const Service = () => {
                 </div>
             </section>
             <div className="w-full h-0.5 my-16 bg-linear-to-r from-transparent via-lime-500 to-transparent animate-pulse"></div>
-        {/* heading */}
-        <div data-aos="zoom-in-down" className="text-center -mb-8 md:my-4">
-          <h2 className="text-4xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-500 to-lime-500 bg-clip-text text-transparent shimmer">
-            Get In Touch
-          </h2>
+            {/* heading */}
+            <div data-aos="zoom-in-down" className="text-center -mb-8 md:my-4">
+                <h2 className="text-4xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-500 to-lime-500 bg-clip-text text-transparent shimmer">
+                    Get In Touch
+                </h2>
 
-          <div data-aos="zoom-in" className="w-48 h-1 mx-auto my-2 bg-lime-500 rounded-full" />
-        </div>
+                <div data-aos="zoom-in" className="w-48 h-1 mx-auto my-2 bg-lime-500 rounded-full" />
+            </div>
 
         </section>
     );

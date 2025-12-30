@@ -14,7 +14,7 @@ const Extra1 = () => {
             absolute inset-0 -z-10 rounded-2xl
             bg-linear-to-r from-emerald-600 to-lime-600
             blur-[130px] animate-pulse"/>
-
+e
                 {/* CARD */}
                 <div
                     className="

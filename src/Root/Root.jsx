@@ -1,5 +1,4 @@
 import { Outlet } from "react-router";
-import Navbar from "../Navbar/Navbar";
 import CursorFollower from "../Shared/CursorFollower";
 
 const Root = () => {
@@ -24,10 +23,8 @@ const Root = () => {
       {/* CONTENT */}
       <div className="relative z-10">
         <CursorFollower></CursorFollower>
-        <Navbar />
         <Outlet />
       </div>
-
     </div>
   );
 };

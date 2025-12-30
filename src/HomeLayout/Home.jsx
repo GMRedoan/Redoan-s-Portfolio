@@ -8,10 +8,12 @@ import MyProjects from './MyProjects';
 import ContactMe from './ContactMe';
 import Extra1 from '../Shared/Extra1';
 import Extra2 from '../Shared/Extra2';
+import Navbar from '../Navbar/Navbar';
 
 const Home = () => {
     return (
         <div>
+            <Navbar />
             <Banner></Banner>
             <AboutMe></AboutMe>
             <MySkills></MySkills>

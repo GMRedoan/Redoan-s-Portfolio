@@ -99,7 +99,8 @@ const MySkills = () => {
                 <h2 className="text-4xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-500 to-lime-400 bg-clip-text text-transparent shimmer">
                     Skills & Expertise
                 </h2>
-                <div data-aos="zoom-in" className="w-84 h-1 mx-auto mt-2 bg-lime-500 rounded-full"></div>
+                <div data-aos="zoom-in"
+                 className="w-84 h-1 mx-auto mt-2 bg-lime-500 rounded-full"></div>
             </div>
 
             <div className="grid gap-6 md:grid-cols-3">

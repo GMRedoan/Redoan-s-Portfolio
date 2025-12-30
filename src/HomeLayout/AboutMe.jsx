@@ -7,6 +7,8 @@ import { GiMoebiusStar } from "react-icons/gi";
 import { FaCode, FaLock } from "react-icons/fa";
 import { LuBrain } from "react-icons/lu";
 import { TbStack2Filled } from "react-icons/tb";
+import { Typewriter } from "react-simple-typewriter";
+import { useInView } from "react-intersection-observer";
 
 const AboutMe = () => {
     useEffect(() => {
@@ -18,9 +20,14 @@ const AboutMe = () => {
             AOS.refreshHard();
         }, 600);
     }, []);
+    const [ref, inView] = useInView({
+        triggerOnce: false,
+        threshold: 0.4,
+    });
+
 
     return (
-        <section id="about-section" className="relative pb-10">
+        <section id="about-section" className="relative pb-10" ref={ref}>
             <div data-aos="zoom-in-down" className="relative max-w-6xl mx-auto px-6 text-center mb-12">
                 <h2 className="text-4xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-500 to-lime-400 bg-clip-text text-transparent shimmer">
                     About Me
@@ -51,7 +58,16 @@ const AboutMe = () => {
                                 data-aos="zoom-in"
                                 className="text-2xl font-extrabold bg-linear-to-r from-emerald-600 to-lime-500 bg-clip-text text-transparent mb-4 flex justify-center items-center gap-4"
                             >
-                                <GrTechnology className="animate-spin text-lime-500" />  Who I Am
+                                <GrTechnology className="animate-spin text-lime-500" />
+                                {inView && (
+                                    <Typewriter
+                                        words={["Who I Am"]}
+                                        loop={1}
+                                        cursor
+                                        cursorStyle=""
+                                        typeSpeed={120}
+                                    />
+                                )}
                             </h3>
 
                             {/* Description */}
@@ -120,7 +136,15 @@ const AboutMe = () => {
                             className="text-2xl font-extrabold bg-linear-to-r from-emerald-600 to-lime-500 bg-clip-text text-transparent mb-4 flex justify-center items-center gap-4"
                         >
                             <GiMoebiusStar className="animate-spin text-lime-500" />
-                            My Specialty
+                            {inView && (<Typewriter
+                                words={["My Specialty"]}
+                                loop={1}
+                                cursor
+                                cursorStyle=""
+                                typeSpeed={120}
+                            />
+                            )}
+
                         </h3>
                         <p className="text-gray-400 leading-relaxed text-sm md:text-base ">
                             My core expertise lies in developing reliable, user-friendly web solutions that prioritize performance, scalability, and long-term maintainability for real-world business needs.
@@ -134,7 +158,7 @@ const AboutMe = () => {
                             {[
                                 {
                                     title: "Frontend Development",
-                                    icon: <FaCode className="text-emerald-700"/>,
+                                    icon: <FaCode className="text-emerald-700" />,
                                     desc: "Pixel-perfect UI, animations, and responsive layouts.",
                                 },
                                 {
@@ -153,36 +177,43 @@ const AboutMe = () => {
                                     desc: "Clean solutions with scalable architecture.",
                                 },
                             ].map((item, i) => (
-<div
-  key={i}
-  className="relative group/card rounded-xl p-px overflow-hidden"
->
-  {/* Animated Border */}
-  <div
-    className="
+                                <div
+                                    key={i}
+                                    className="relative group/card rounded-xl p-px overflow-hidden"
+                                >
+                                    {/* Animated Border */}
+                                    <div
+                                        className="
       pointer-events-none absolute inset-0 rounded-xl
       bg-[conic-gradient(from_0deg,rgba(163,230,53,0),rgba(163,230,53,0.6),rgba(163,230,53,0))]
       animate-[spin_8s_linear_infinite]
       transition-opacity duration-300
     "
-  ></div>
+                                    ></div>
 
-  {/* Card */}
-  <div
-    className="
+                                    {/* Card */}
+                                    <div
+                                        className="
       relative rounded-xl py-6 px-4
       bg-gray-900 backdrop-blur-md cursor-pointer"
-  >
-    <h4 className="text-lg font-semibold bg-linear-to-r from-emerald-700 to-lime-500 bg-clip-text text-transparent mb-2 flex items-center gap-1">
-      <span className="text-md bounce-custom">{item.icon}</span>
-      {item.title}
-    </h4>
+                                    >
+                                        <h4 className="text-lg font-semibold bg-linear-to-r from-emerald-700 to-lime-500 bg-clip-text text-transparent mb-2 flex items-center gap-1">
+                                            <span className="text-md bounce-custom">{item.icon}</span>
+                                            {inView && (<Typewriter
+                                                words={[item.title]}
+                                                loop={1}
+                                                cursor
+                                                cursorStyle=""
+                                                typeSpeed={120}
+                                            />
+                                            )}
+                                        </h4>
 
-    <p className="text-sm text-white/65 leading-relaxed">
-      {item.desc}
-    </p>
-  </div>
-</div>
+                                        <p className="text-sm text-white/65 leading-relaxed">
+                                            {item.desc}
+                                        </p>
+                                    </div>
+                                </div>
                             ))}
                         </div>
                     </div>
