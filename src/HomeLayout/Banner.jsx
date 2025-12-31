@@ -66,7 +66,7 @@ const Banner = () => {
 
             {/* ✨ Floating shapes */}
             <div className="absolute w-72 h-72 bg-lime-300/30 rounded-full 
-        top-40 left-30 blur-3xl animate-floatSlow"></div>
+        top-40 md:left-30 blur-3xl animate-floatSlow"></div>
 
             <div className="absolute w-96 h-96 bg-emerald-300/30 rounded-full 
         bottom-20 right-50 blur-3xl animate-floatSlow delay-2000"></div>
@@ -101,7 +101,7 @@ const Banner = () => {
                         <a
                             href="/GM_Redoan_MERN_Developer.pdf"
                             download
-                            className="btn mt-8 px-8 text-white 
+                            className="btn mt-8 px-6 md:px-8 text-white 
             bg-linear-to-r from-emerald-600 to-lime-500 
             border-none shadow-lg rounded-3xl
             hover:shadow-[0_0_20px_rgba(34,197,94,0.8)] transition-all ease-out duration-300
@@ -115,7 +115,7 @@ const Banner = () => {
                                 e.preventDefault();
                                 document.getElementById("contact-section")?.scrollIntoView({ behavior: "smooth" });
                             }}
-                            className="px-6 md:px-8 relative mt-8 font-bold rounded-3xl
+                            className="px-4 md:px-8 relative mt-8 font-bold rounded-3xl
     text-transparent bg-clip-text bg-linear-to-r from-emerald-600 to-lime-500
       border-2 border-gradient-to-r border-lime-500
     shadow-lg hover:shadow-[0_0_20px_rgba(34,197,94,0.8)]

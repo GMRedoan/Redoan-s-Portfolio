@@ -3,7 +3,6 @@ import {
     FaReact,
     FaNodeJs,
     FaGitAlt,
-    FaFigma,
     FaCode,
     FaHtml5,
     FaTools,
@@ -100,7 +99,7 @@ const MySkills = () => {
                     Skills & Expertise
                 </h2>
                 <div data-aos="zoom-in"
-                 className="w-84 h-1 mx-auto mt-2 bg-lime-500 rounded-full"></div>
+                 className="w-60 md:w-84 h-1 mx-auto mt-2 bg-lime-500 rounded-full"></div>
             </div>
 
             <div className="grid gap-6 md:grid-cols-3">

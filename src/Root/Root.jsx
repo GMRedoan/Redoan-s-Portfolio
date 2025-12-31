@@ -22,7 +22,7 @@ const Root = () => {
 
       {/* CONTENT */}
       <div className="relative z-10">
-        <CursorFollower></CursorFollower>
+        <span className="hidden md:block"><CursorFollower></CursorFollower></span>
         <Outlet />
       </div>
     </div>

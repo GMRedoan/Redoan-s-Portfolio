@@ -5,7 +5,7 @@ import { PiRadioactiveBold } from 'react-icons/pi';
 
 const Extra1 = () => {
     return (
-        <section data-aos="zoom-in-down" className="py-18 pt-32 relative">
+        <section data-aos="zoom-in-down" className="py-18 md:pt-32 relative">
             <div className="max-w-6xl mx-auto px-4 relative">
 
                 {/* 🌟 GLOW BACKGROUND */}
