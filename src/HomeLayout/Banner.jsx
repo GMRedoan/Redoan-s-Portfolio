@@ -131,7 +131,7 @@ const Banner = () => {
                                             hover:drop-shadow-[0_0_20px_rgba(34,197,94,0.8)]">
                             </FaGithub>
                         </a>
-                        <a href="">
+                        <a href="https://www.linkedin.com/in/gm-redoan-41558a391">
                             <FaLinkedin className="
                                            bg-none fill-current
                                            transition-transform duration-300

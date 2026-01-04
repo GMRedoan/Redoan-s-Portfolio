@@ -8,7 +8,7 @@ const projects = [
     id: 1,
     title: "Blood Donation Website",
     liveLink: 'https://red-care-2025.netlify.app',
-    repoLink: 'https://github.com/GMRedoan/Assignment-11-client.git',
+    repoLink: 'https://github.com/GMRedoan/red_care-client.git',
     icon: <FaDroplet className="text-red-500 bounce-custom" />,
     description:
       "A role based website that can help any user in his critical condition with firebase security and fund payment system.",
@@ -18,8 +18,8 @@ const projects = [
   {
     id: 2,
     title: "Car Rental Website",
-    liveLink: 'https://rent-wheels-2025.netlify.app/',
-    repoLink: 'https://github.com/GMRedoan/assignment-10-client.git',
+    liveLink: 'https://rent-wheels-2025.netlify.app',
+    repoLink: 'https://github.com/GMRedoan/rent_wheels-client.git',
     icon: <IoCarSportSharp className="text-lime-500 animate-pulse" />,
     description:
       "A Car rental website with Private routes and modern search functionality, UI/UX friendly. Besides, canceling system of rented car",
@@ -29,8 +29,8 @@ const projects = [
   {
     id: 3,
     title: "Apps 4 U",
-    liveLink: 'https://112-assignment-08.netlify.app/apps',
-    repoLink: 'https://github.com/GMRedoan/assignment-08.git',
+    liveLink: 'https://apps4u20025.netlify.app',
+    repoLink: 'https://github.com/GMRedoan/apps4u-frontend.git',
     icon: <FaAppStore className="text-purple-500 animate-spin" />,
     description:
       "A website that includes your application, user can install and uninstall it with UI/UX and responsive design.",
