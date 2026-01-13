@@ -7,7 +7,7 @@ const projects = [
   {
     id: 1,
     title: "Red Care",
-    liveLink: 'https://red-care-2025.netlify.app',
+    liveLink: 'https://red-care-2026.netlify.app',
     repoLink: 'https://github.com/GMRedoan/red_care-client.git',
     icon: <FaDroplet className="text-red-500 bounce-custom" />,
     description:
@@ -18,7 +18,7 @@ const projects = [
   {
     id: 2,
     title: "Rent Wheels",
-    liveLink: 'https://rent-wheels-2025.netlify.app',
+    liveLink: 'https://rent-wheels-2026.netlify.app',
     repoLink: 'https://github.com/GMRedoan/rent_wheels-client.git',
     icon: <IoCarSportSharp className="text-lime-500 animate-pulse" />,
     description:
@@ -29,7 +29,7 @@ const projects = [
   {
     id: 3,
     title: "Apps 4 U",
-    liveLink: 'https://apps4u20025.netlify.app',
+    liveLink: 'https://apps-4-u-2026.netlify.app',
     repoLink: 'https://github.com/GMRedoan/apps4u-frontend.git',
     icon: <FaAppStore className="text-purple-500 animate-spin" />,
     description:
