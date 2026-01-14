@@ -7,7 +7,7 @@ const projects = [
   {
     id: 1,
     title: "Red Care",
-    liveLink: 'https://red-care-2026.netlify.app',
+    liveLink: 'https://red-care-client.vercel.app',
     repoLink: 'https://github.com/GMRedoan/red_care-client.git',
     icon: <FaDroplet className="text-red-500 bounce-custom" />,
     description:
