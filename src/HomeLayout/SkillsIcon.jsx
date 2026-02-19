@@ -2,7 +2,7 @@ import React from "react";
 import { FaReact, FaNodeJs, FaJsSquare, FaFigma, FaGitAlt } from "react-icons/fa";
 import { IoLogoHtml5 } from "react-icons/io5";
 import { PiPlugFill } from "react-icons/pi";
-import { SiExpress, SiMongodb, SiTailwindcss, SiPostman } from "react-icons/si";
+import { SiExpress, SiMongodb, SiTailwindcss, SiPostman, SiNextdotjs } from "react-icons/si";
 import { VscVscodeInsiders } from "react-icons/vsc";
 
 const orbitIconSize = 55;
@@ -20,6 +20,7 @@ const icons = [
     { icon: <SiPostman size={orbitIconSize} color="#F28433" />, radiusX: 230, radiusY: 190, duration: 18 },
     { icon: <FaFigma size={orbitIconSize} color="#B31BE0" />, radiusX: 270, radiusY: 210, duration: 16 },
     { icon: <FaGitAlt size={orbitIconSize} color="#FF7C00" />, radiusX: 290, radiusY: 250, duration: 20 },
+    { icon: <SiNextdotjs size={orbitIconSize} color="#FFFFFF" />, radiusX: 270, radiusY: 230, duration: 22 },
 ];
 
 const SkillsIcon = () => {

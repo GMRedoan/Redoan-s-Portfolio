@@ -223,8 +223,7 @@ const ContactMe = () => {
 
               {/* Submit */}
               <button
-                data-aos="zoom-in"
-                type="submit"
+                 type="submit"
                 className="
                   btn w-full
                   bg-linear-to-r from-emerald-600 to-lime-500

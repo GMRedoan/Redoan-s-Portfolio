@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { FaReact, FaNodeJs, FaGitAlt, FaCode, FaHtml5, FaTools} from "react-icons/fa";
 import { PiFigmaLogoDuotone, PiPlugFill } from "react-icons/pi";
-import { SiJavascript, SiTailwindcss, SiMongodb, SiPostman, SiBackendless, SiExpress,} from "react-icons/si";
+import { SiJavascript, SiMongodb, SiPostman, SiBackendless, SiExpress, SiNextdotjs,} from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
 const skills = [
@@ -11,9 +11,9 @@ const skills = [
         shadow: "shadow-[0_20px_60px_rgba(34,211,238,0.25)]",
         border: "border-cyan-500",
         items: [
-            { name: "React", level: 90, icon: <FaReact className="text-cyan-400 animate-spin" /> },
+            { name: "React", level: 95, icon: <FaReact className="text-cyan-400 animate-spin" /> },
             { name: "JavaScript", level: 90, icon: <SiJavascript className="text-yellow-400 bounce-custom" /> },
-            { name: "Tailwind", level: 95, icon: <SiTailwindcss className="text-blue-400 bounce-custom" /> },
+            { name: "Tailwind", level: 95, icon: <SiNextdotjs className="text-white animate-spin" /> },
             { name: "HTML/CSS", level: 88, icon: <FaHtml5 className="text-orange-400 animate-pulse" /> },
         ],
     },

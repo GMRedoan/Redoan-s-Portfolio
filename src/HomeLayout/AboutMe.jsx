@@ -36,7 +36,7 @@ const AboutMe = () => {
             </div>
 
             <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
-                <div data-aos="fade-right">
+                <div data-aos="zoom-in">
                     <div
                         className="relative group bg-gray-950 backdrop-blur-md
                                 rounded-xl p-8 transform-gpu
@@ -105,7 +105,7 @@ const AboutMe = () => {
                 </div>
 
                 {/* Card 2 */}
-                <div data-aos="fade-left">
+                <div data-aos="zoom-in">
                     <div
                         className="
                                    relative group bg-gray-950 backdrop-blur-md

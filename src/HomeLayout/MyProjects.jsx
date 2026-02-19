@@ -1,4 +1,5 @@
-import { FaAppStore, FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { PiFarmBold } from "react-icons/pi";
 import { FaDroplet } from "react-icons/fa6";
 import { IoCarSportSharp } from "react-icons/io5";
 import { TbLivePhotoFilled } from "react-icons/tb";
@@ -12,7 +13,7 @@ const projects = [
     icon: <FaDroplet className="text-red-500 bounce-custom" />,
     description:
       "A role based website that can help any user in his critical condition with firebase security and fund payment system.",
-    image: "https://i.ibb.co.com/1Ym3q09N/Screenshot-2025-12-28-at-5-53-01-PM.png",
+    image: "https://i.ibb.co.com/mVZyY8j4/Screenshot-2026-01-16-at-2-14-22-PM.png",
     tech: ["React", "Tailwind", "DaisyUI", "Firebase", "Stripe", "MongoDB"],
   },
   {
@@ -28,14 +29,13 @@ const projects = [
   },
   {
     id: 3,
-    title: "Apps 4 U",
-    liveLink: 'https://apps-4-u-2026.netlify.app',
-    repoLink: 'https://github.com/GMRedoan/apps4u-frontend.git',
-    icon: <FaAppStore className="text-purple-500 animate-spin" />,
-    description:
-      "A website that includes your application, user can install and uninstall it with UI/UX and responsive design.",
-    image: "https://i.ibb.co.com/wrRpbgdG/Screenshot-2025-12-28-at-6-04-13-PM.png",
-    tech: ["React", "Tailwind", "Charts", "Express.js", "HTML5", "React Icon"],
+    title: "Fare Farm",
+    liveLink: 'https://fare-farm-next.vercel.app/home',
+    repoLink: 'https://github.com/GMRedoan/Fare-Farm-Next.git',
+    icon: <PiFarmBold className="text-yellow-500 animate-pulse" />,
+    description: "This website is showcasing organic products, sustainable farming practices, customer reviews and seamless contact experience.",
+    image: "https://i.ibb.co.com/1tBtg2vc/image.png",
+    tech: ["Next.js", "Tailwind", "Next.auth", "Mongodb", "Javascript", "React Icon"],
   },
 ];
 
