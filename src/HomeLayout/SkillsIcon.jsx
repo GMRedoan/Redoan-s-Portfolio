@@ -2,7 +2,7 @@ import React from "react";
 import { FaReact, FaNodeJs, FaJsSquare, FaFigma, FaGitAlt } from "react-icons/fa";
 import { IoLogoHtml5 } from "react-icons/io5";
 import { PiPlugFill } from "react-icons/pi";
-import { SiExpress, SiMongodb, SiTailwindcss, SiPostman, SiNextdotjs } from "react-icons/si";
+import { SiExpress, SiMongodb, SiTailwindcss, SiPostman, SiNextdotjs, SiTypescript } from "react-icons/si";
 import { VscVscodeInsiders } from "react-icons/vsc";
 
 const orbitIconSize = 55;
@@ -13,6 +13,7 @@ const icons = [
     { icon: <SiTailwindcss size={orbitIconSize} color="#3B87EB" />, radiusX: 250, radiusY: 190, duration: 17 },
     { icon: <FaJsSquare size={orbitIconSize} color="#EDED1C" />, radiusX: 180, radiusY: 180, duration: 13 },
     { icon: <IoLogoHtml5 size={orbitIconSize} color="#F28433" />, radiusX: 220, radiusY: 180, duration: 19 },
+    { icon: <SiTypescript size={orbitIconSize} color="#3B87EB" />, radiusX: 220, radiusY: 120, duration: 22 },
     { icon: <PiPlugFill size={orbitIconSize} color="#F7F8FA" />, radiusX: 220, radiusY: 180, duration: 21 },
     { icon: <SiExpress size={orbitIconSize} color="#F7F8FA" />, radiusX: 260, radiusY: 220, duration: 23 },
     { icon: <SiMongodb size={orbitIconSize} color="#4DB33D" />, radiusX: 280, radiusY: 220, duration: 11 },

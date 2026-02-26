@@ -73,7 +73,7 @@ const Banner = () => {
                 {/* Left */}
                 <div data-aos="fade-right">
                     <p className="uppercase tracking-widest text-[#22c55e] font-semibold">
-                        Hello
+                        Hello !
                     </p>
 
                     <h1 className="mt-4 text-5xl md:text-6xl font-extrabold leading-tight text-white">
@@ -89,14 +89,15 @@ const Banner = () => {
                     </h2>
 
                     <p className="mt-6 leading-relaxed text-white/70 max-w-lg">
-                        MERN Stack Developer and can build full-stack web applications smoothly using Mongodb, Express.js, React and
-                        Node.js. Besides I already completed multiple real projects with authentication, role-based access and CRUD
-                        operations. I have also problem solving strategy and can make responsive with user friendly design.
+                        MERN Stack Developer & Frontend with strong experience in building scalable full-stack web applications
+                        using MongoDB, Express.js, React.js, Node.js, Next.js, and TypeScript. Skilled in developing secure
+                        authentication systems, implementing role-based access control, and designing RESTful APIs with complete
+                        CRUD functionality. Adept at problem-solving, performance optimization, and delivering production-ready applications.ve with user friendly design.
                     </p>
 
                     <div className="flex gap-3">
                         <a
-                            href="/redoan_resume.pdf"
+                            href="/redoan_resume_03.pdf"
                             download
                             className="btn mt-8 px-6 md:px-8 text-white 
                                        bg-linear-to-r from-emerald-600 to-lime-500 

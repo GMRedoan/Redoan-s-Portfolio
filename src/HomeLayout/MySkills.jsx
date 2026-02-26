@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { FaReact, FaNodeJs, FaGitAlt, FaCode, FaHtml5, FaTools} from "react-icons/fa";
 import { PiFigmaLogoDuotone, PiPlugFill } from "react-icons/pi";
-import { SiJavascript, SiMongodb, SiPostman, SiBackendless, SiExpress, SiNextdotjs,} from "react-icons/si";
+import { SiJavascript, SiMongodb, SiPostman, SiBackendless, SiExpress, SiNextdotjs, SiTypescript, SiFirebase, SiVercel,} from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
 const skills = [
@@ -11,10 +11,11 @@ const skills = [
         shadow: "shadow-[0_20px_60px_rgba(34,211,238,0.25)]",
         border: "border-cyan-500",
         items: [
-            { name: "React", level: 95, icon: <FaReact className="text-cyan-400 animate-spin" /> },
-            { name: "JavaScript", level: 90, icon: <SiJavascript className="text-yellow-400 bounce-custom" /> },
-            { name: "Tailwind", level: 95, icon: <SiNextdotjs className="text-white animate-spin" /> },
-            { name: "HTML/CSS", level: 88, icon: <FaHtml5 className="text-orange-400 animate-pulse" /> },
+            { name: "React.js", level: 95, icon: <FaReact className="text-cyan-400 animate-spin" /> },
+            { name: "JavaScript", level: 93, icon: <SiJavascript className="text-yellow-400 bounce-custom" /> },
+            { name: "Next.js", level: 90, icon: <SiNextdotjs className="text-white animate-spin" /> },
+            { name: "TypeScript", level: 85, icon: <SiTypescript className="text-blue-400 bounce-custom" /> },
+            { name: "HTML/CSS", level: 95, icon: <FaHtml5 className="text-orange-400 animate-pulse" /> },
         ],
     },
     {
@@ -26,6 +27,7 @@ const skills = [
             { name: "Node.js", level: 88, icon: <FaNodeJs className="text-lime-600 animate-spin" /> },
             { name: "MongoDB", level: 90, icon: <SiMongodb className="text-emerald-800  bounce-custom" /> },
             { name: "Express.js", level: 88, icon: <SiExpress className="text-white animate-pulse" /> },
+            { name: "FireBase", level: 93, icon: <SiFirebase className="text-red-500 animate-pulse" /> },
             { name: "Rest Api", level: 90, icon: <PiPlugFill className="text-white bounce-custom" /> },
         ],
     },
@@ -36,9 +38,11 @@ const skills = [
         border: "border-orange-500",
         items: [
             { name: "Git", level: 90, icon: <FaGitAlt className="text-orange-700 bounce-custom" /> },
-            { name: "VS Code", level: 93, icon: <VscVscode className="text-blue-500 bounce-custom" /> },
-            { name: "Figma", level: 95, icon: <PiFigmaLogoDuotone className="text-purple-500 animate-pulse" /> },
-            { name: "Postman", level: 90, icon: <SiPostman className="text-orange-500 animate-spin" /> },
+            { name: "VS Code", level: 95, icon: <VscVscode className="text-blue-500 animate-spin" /> },
+            { name: "Figma", level: 92, icon: <PiFigmaLogoDuotone className="text-purple-500 animate-pulse" /> },
+            { name: "Vercel", level: 90, icon: <SiVercel 
+            className="text-white bounce-custom" /> },
+            { name: "Postman", level: 88, icon: <SiPostman className="text-orange-500 animate-spin" /> },
         ],
     },
 ];
