@@ -10,7 +10,7 @@ const Extra1 = () => {
                 <div className="
                              absolute inset-0 -z-10 rounded-2xl
                              bg-linear-to-r from-emerald-600 to-lime-600
-                             blur-[130px] animate-pulse"/>
+                             blur-[130px]"/>
                 {/* CARD */}
                 <div className="
                               relative grid grid-cols-1 md:grid-cols-4
@@ -49,7 +49,7 @@ const Extra1 = () => {
                     <div className="hidden md:block absolute left-3/4 top-6 bottom-6 w-0.5 bg-linear-to-b from-transparent via-lime-500 to-transparent" />
 
                     <div data-aos="zoom-in" className="p-8 text-center">
-                        <FaLightbulb className="mx-auto text-5xl text-lime-400 animate-pulse" />
+                        <FaLightbulb className="mx-auto text-5xl text-lime-400" />
                         <h3 className="text-4xl font-bold text-white mt-2">∞</h3>
                         <p className="mt-2 text-sm text-gray-300">
                             Passion for learning & innovation.

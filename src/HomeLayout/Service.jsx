@@ -56,9 +56,11 @@ const Service = () => {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
                         {services.map(({ title, desc, icon }, i) => (
-                            <div data-aos="zoom-in-down">
+                            <div 
+                                key={i} 
+                            data-aos="zoom-in-down">
                                 <div
-                                    key={i} className="relative rounded-2xl overflow-hidden group hover:scale-[1.03] duration-300
+                                    className="relative rounded-2xl overflow-hidden group hover:scale-[1.03] duration-300
                                     shadow-[0_10px_30px_rgba(34,197,94,0.25)]
                                     hover:shadow-[0_30px_50px_rgba(34,197,94,0.25)]
                                     ">
@@ -98,7 +100,7 @@ const Service = () => {
             </section>
             <div className="w-full h-0.5 my-16 bg-linear-to-r from-transparent via-lime-500 to-transparent animate-pulse"></div>
              <div data-aos="zoom-in-down" className="text-center -mb-8 md:my-4">
-                <h2 className="text-4xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-500 to-lime-500 bg-clip-text text-transparent shimmer">
+                <h2 className="text-4xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-500 to-lime-500 bg-clip-text text-transparent">
                     Get In Touch
                 </h2>
 

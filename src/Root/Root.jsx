@@ -1,5 +1,4 @@
 import { Outlet } from "react-router";
-import CursorFollower from "../Shared/CursorFollower";
 
 const Root = () => {
   return (
@@ -18,7 +17,6 @@ const Root = () => {
       </div>
 
       <div className="relative z-10">
-        <span className="hidden md:block"><CursorFollower></CursorFollower></span>
         <Outlet />
       </div>
     </div>

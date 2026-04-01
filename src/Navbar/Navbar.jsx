@@ -32,35 +32,35 @@ const Navbar = () => {
             document
                 .getElementById("banner-section")
                 ?.scrollIntoView({ behavior: "smooth" });
-        }} className='relative text-lime-500 font-semibold hover:text-[#22c55e] transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-[#22c55e] after:transition-all after:duration-300 hover:after:w-full animate-glow'>Home</NavLink>,
+        }} className='relative text-lime-500 font-semibold transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-[#22c55e] after:transition-all after:duration-300 hover:after:w-full'>Home</NavLink>,
         <NavLink onClick={(e) => {
             e.preventDefault();
             document.getElementById("about-section")?.scrollIntoView({ behavior: "smooth" });
         }}
-            className='relative text-lime-500 font-semibold hover:text-[#22c55e] transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-[#22c55e] after:transition-all after:duration-300 hover:after:w-full animate-glow'>About</NavLink>,
+            className='relative text-lime-500 font-semibold transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-[#22c55e] after:transition-all after:duration-300 hover:after:w-full'>About</NavLink>,
         <NavLink
             onClick={(e) => {
                 e.preventDefault();
                 document.getElementById("project-section")?.scrollIntoView({ behavior: "smooth" });
             }}
-            className='relative text-lime-500 font-semibold hover:text-[#22c55e] transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-[#22c55e] after:transition-all after:duration-300 
-           hover:after:w-full animate-glow'>Project</NavLink>,
+            className='relative text-lime-500 font-semibold transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-[#22c55e] after:transition-all after:duration-300 
+           hover:after:w-full'>Project</NavLink>,
 
         <NavLink
             onClick={(e) => {
                 e.preventDefault();
                 document.getElementById("service-section")?.scrollIntoView({ behavior: "smooth" });
             }}
-            className='relative text-lime-500 font-semibold hover:text-[#22c55e] transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-[#22c55e] after:transition-all after:duration-300 
-           hover:after:w-full animate-glow'>Services</NavLink>,
+            className='relative text-lime-500 font-semibold transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-[#22c55e] after:transition-all after:duration-300 
+           hover:after:w-full'>Services</NavLink>,
 
         <NavLink
             onClick={(e) => {
                 e.preventDefault();
                 document.getElementById("contact-section")?.scrollIntoView({ behavior: "smooth" });
             }}
-            className='relative text-lime-500 font-semibold hover:text-[#22c55e] transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-[#22c55e] after:transition-all after:duration-300 
-           hover:after:w-full animate-glow'>Contact</NavLink>,
+            className='relative text-lime-500 font-semibold transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-[#22c55e] after:transition-all after:duration-300 
+           hover:after:w-full'>Contact</NavLink>,
     ]
     return (
         <div
@@ -81,8 +81,8 @@ const Navbar = () => {
                 <h1 data-aos="fade-right"
                     className="text-xl md:text-4xl cursor-pointer 
            flex group select-none font-name2
-           relative text-lime-500 hover:text-[#22c55e] transition 
-           hover:after:w-full animate-glow">
+           relative text-lime-500 transition 
+           hover:after:w-full">
                     <span className="wave">G</span>
                     <span className="wave">M</span>
 

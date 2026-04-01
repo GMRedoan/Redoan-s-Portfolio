@@ -85,7 +85,7 @@ const MySkills = () => {
             className="py-24 max-w-7xl mx-auto px-4 md:mb-30"
         >
             <div data-aos="zoom-in-down" className="relative text-center mb-22">
-                <h2 className="text-4xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-500 to-lime-400 bg-clip-text text-transparent shimmer">
+                <h2 className="text-4xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-500 to-lime-400 bg-clip-text text-transparent">
                     Skills & Expertise
                 </h2>
                 <div data-aos="zoom-in"
@@ -94,9 +94,8 @@ const MySkills = () => {
 
             <div className="grid gap-6 md:grid-cols-3">
                 {skills.map((group, i ) => (
-                    <div data-aos="zoom-in-down">
+                    <div key={i} data-aos="zoom-in-down">
                         <div
-                             key={i}
                             className={`relative p-6 rounded-2xl
                                        bg-gray-950
                                        duration-300 border

@@ -29,7 +29,7 @@ const AboutMe = () => {
     return (
         <section id="about-section" className="relative pb-10" ref={ref}>
             <div data-aos="zoom-in-down" className="relative max-w-6xl mx-auto px-6 text-center mb-12">
-                <h2 className="text-4xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-500 to-lime-400 bg-clip-text text-transparent shimmer">
+                <h2 className="text-4xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-500 to-lime-400 bg-clip-text text-transparent">
                     About Me
                 </h2>
                 <div data-aos="zoom-in" className="w-38 h-1 mx-auto mt-2 bg-lime-500 rounded-full"></div>
@@ -43,7 +43,7 @@ const AboutMe = () => {
                                 scale-100 hover:scale-[1.03]
                                 transition-all duration-300 ease-out
                                 shadow-lime-400
-                                hover:shadow-[0_8px_18px_rgba(34,197,94,0.25)]">
+                                shadow-[0_8px_18px_rgba(34,197,94,0.25)]">
                         <div className="relative z-10">
                             {/* Title */}
                             <h3
@@ -113,7 +113,7 @@ const AboutMe = () => {
                                    scale-100 hover:scale-[1.03]
                                    transition-all duration-300 ease-out
                                  shadow-lime-400
-                                   hover:shadow-[0_8px_18px_rgba(16,185,129,0.28)]"
+                                shadow-[0_8px_18px_rgba(16,185,129,0.28)]"
                     >
                         <h3
                             data-aos="zoom-in"

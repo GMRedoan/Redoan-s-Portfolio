@@ -33,7 +33,7 @@ const SkillsIcon = () => {
                 <div 
                     className="absolute md:-top-22 left-26 md:left-138 z-10">
 
-                    <h2 className="text-3xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-500 to-lime-400 bg-clip-text text-transparent shimmer">
+                    <h2 className="text-3xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-500 to-lime-400 bg-clip-text text-transparent">
                         Technologies
                     </h2>
                     <div data-aos="zoom-in" className="w-48 md:w-76 h-1 md:mx-0 mt-2 bg-lime-500 rounded-full"></div>

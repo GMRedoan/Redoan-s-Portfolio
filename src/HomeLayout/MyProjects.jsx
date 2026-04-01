@@ -60,7 +60,7 @@ const MyProjects = () => {
             className="mb-6 text-center text-4xl md:text-5xl font-extrabold pb-10">
             <h2 className="text-white">
               My{" "}
-              <span className="bg-linear-to-r from-emerald-400 to-lime-400 bg-clip-text text-transparent shimmer">
+              <span className="bg-linear-to-r from-emerald-400 to-lime-400 bg-clip-text text-transparent">
                 Projects
               </span>
             </h2>
