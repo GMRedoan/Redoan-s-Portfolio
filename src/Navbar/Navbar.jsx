@@ -49,10 +49,10 @@ const Navbar = () => {
         <NavLink
             onClick={(e) => {
                 e.preventDefault();
-                document.getElementById("service-section")?.scrollIntoView({ behavior: "smooth" });
+                document.getElementById("achievement-section")?.scrollIntoView({ behavior: "smooth" });
             }}
             className='relative text-lime-500 font-semibold transition after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-[#22c55e] after:transition-all after:duration-300 
-           hover:after:w-full'>Services</NavLink>,
+           hover:after:w-full'>Achievement</NavLink>,
 
         <NavLink
             onClick={(e) => {

@@ -40,7 +40,7 @@ const AboutMe = () => {
                     <div
                         className="relative group bg-gray-950 backdrop-blur-md
                                 rounded-xl p-8 transform-gpu
-                                scale-100 hover:scale-[1.03]
+                                scale-100 hover:scale-[1.02]
                                 transition-all duration-300 ease-out
                                 shadow-lime-400
                                 shadow-[0_8px_18px_rgba(34,197,94,0.25)]">
@@ -110,7 +110,7 @@ const AboutMe = () => {
                         className="
                                    relative group bg-gray-950 backdrop-blur-md
                                    rounded-xl p-8 transform-gpu
-                                   scale-100 hover:scale-[1.03]
+                                   scale-100 hover:scale-[1.02]
                                    transition-all duration-300 ease-out
                                  shadow-lime-400
                                 shadow-[0_8px_18px_rgba(16,185,129,0.28)]"

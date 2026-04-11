@@ -24,7 +24,7 @@ const skills = [
         shadow: "shadow-[0_20px_60px_rgba(34,197,94,0.25)]",
         border: "border-lime-500",
         items: [
-            { name: "Node.js", level: 88, icon: <FaNodeJs className="text-lime-600 animate-spin" /> },
+            { name: "Node.js", level: 88, icon: <FaNodeJs className="text-lime-600 bounce-custom" /> },
             { name: "MongoDB", level: 90, icon: <SiMongodb className="text-emerald-800  bounce-custom" /> },
             { name: "Express.js", level: 88, icon: <SiExpress className="text-white animate-pulse" /> },
             { name: "FireBase", level: 93, icon: <SiFirebase className="text-red-500 animate-pulse" /> },
@@ -38,7 +38,7 @@ const skills = [
         border: "border-orange-500",
         items: [
             { name: "Git", level: 90, icon: <FaGitAlt className="text-orange-700 bounce-custom" /> },
-            { name: "VS Code", level: 95, icon: <VscVscode className="text-blue-500 animate-spin" /> },
+            { name: "VS Code", level: 95, icon: <VscVscode className="text-blue-500 animate-pulse" /> },
             { name: "Figma", level: 92, icon: <PiFigmaLogoDuotone className="text-purple-500 animate-pulse" /> },
             { name: "Vercel", level: 90, icon: <SiVercel 
             className="text-white bounce-custom" /> },

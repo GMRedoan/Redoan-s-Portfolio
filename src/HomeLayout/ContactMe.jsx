@@ -35,7 +35,7 @@ const ContactMe = () => {
 
   return (
     <section id="contact-section" className="py-12 sm:py-20 relative" ref={ref}>
-      <div className="max-w-7xl mx-auto">
+      <div className="md:mx-22">
         <div>
           <div
             className="
@@ -237,6 +237,7 @@ const ContactMe = () => {
                 Send Message
               </button>
             </form>
+            
           </div>
         </div>
       </div>

@@ -78,7 +78,7 @@ const Banner = () => {
 
                     <h1 className="mt-4 text-5xl md:text-6xl font-extrabold leading-tight text-white">
                         I’m{" "}
-                        <span className="bg-linear-to-r from-[#22c55e] via-[#86efac] to-[#16a34a] drop-shadow-[0_0_18px_rgba(34,197,94,0.35)] bg-clip-text text-transparent shimmer">
+                        <span className="bg-linear-to-r from-[#22c55e] via-[#86efac] to-[#16a34a] drop-shadow-[0_0_18px_rgba(34,197,94,0.35)] bg-clip-text text-transparent">
                             GM Redoan
                         </span>
                     </h1>
@@ -92,7 +92,7 @@ const Banner = () => {
                         MERN Stack Developer & Frontend with strong experience in building scalable full-stack web applications
                         using MongoDB, Express.js, React.js, Node.js, Next.js, and TypeScript. Skilled in developing secure
                         authentication systems, implementing role-based access control, and designing RESTful APIs with complete
-                        CRUD functionality. Adept at problem-solving, performance optimization, and delivering production-ready applications.ve with user friendly design.
+                        CRUD functionality. Adept at problem-solving, performance optimization, and delivering production-ready applications with user friendly design.
                     </p>
 
                     <div className="flex gap-3">

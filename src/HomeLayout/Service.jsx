@@ -12,7 +12,7 @@ import { Typewriter } from "react-simple-typewriter";
         },
         {
             title: "Auth Security",
-            desc: "Secure authentication and authorization using JWT and role-based access control to protect user data and systems.",
+            desc: "Secure authentication and authorization using JWT and role-based access control to protect user data.",
             icon: <MdSecurity className="bounce-custom " />,
         },
         {
@@ -35,14 +35,14 @@ const Service = () => {
       });
     
     return (
-        <section id="service-section" className="pb-20 md:pt-10" ref={ref}>
+        <section id="service-section" className="pb-20 md:pt-10  max-w-7xl mx-6 md:mx-22" ref={ref}>
             <section className="relative py-8 pb-12">
-                <div className="absolute inset-0 mx-22 max-w-7xl bg-linear-to-br from-emerald-900 to-lime-500 rounded-2xl
+                <div className="absolute inset-0 mx-16 bg-linear-to-br from-emerald-900 to-lime-500 rounded-2xl
                 blur-[60px] opacity-20 border-2 border-lime-400" />
 
-                <div className="relative max-w-7xl mx-auto px-8">
+                <div className="relative">
                     <div data-aos="zoom-in-down" className="mb-6 text-center">
-                        <h2 className="text-4xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-500 to-lime-500 bg-clip-text text-transparent shimmer">
+                        <h2 className="text-4xl md:text-5xl font-extrabold bg-linear-to-r from-emerald-500 to-lime-500 bg-clip-text text-transparent">
                             Services
                         </h2>
 
